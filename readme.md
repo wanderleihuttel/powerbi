@@ -18,6 +18,7 @@ __DAX__
 - Utilizando Hierarquias (Função PATH) - https://www.youtube.com/watch?v=QFKTr8tAQXE
 - Somar Hierarquias - https://www.youtube.com/watch?v=IeAxmrwDHzw
 - Colorir tabela por marca - https://www.sqlbi.com/articles/applying-color-banding-by-document-number-in-power-bi/
+- Medida para converter bytes para KB, MB, GB - https://community.powerbi.com/t5/Desktop/Function-to-convert-bytes-into-KB-MB-GB-TB-PB-etc/td-p/468023
 
 ___
 
