@@ -28,6 +28,7 @@ __Power Query M__
 - Fibonacci - https://radacad.com/fibonacci-sequence-understanding-the-power-query-recursive-function
 - Salva imagem base64 - https://blog.gbrueckl.at/2018/01/storing-images-powerbi-analysis-services-data-models/
 - Renomear todas colunas para maiúsculo - https://www.youtube.com/watch?v=jlogBrcYZwc
+- Remover linhas duplicadas ignore case - https://seddryck.wordpress.com/2018/03/31/table-distinct-and-case-pitfalls-with-power-query-m-language/
 
 ___
 
