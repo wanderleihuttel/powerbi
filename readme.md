@@ -29,6 +29,8 @@ __Power Query M__
 - Salva imagem base64 - https://blog.gbrueckl.at/2018/01/storing-images-powerbi-analysis-services-data-models/
 - Renomear todas colunas para maiúsculo - https://www.youtube.com/watch?v=jlogBrcYZwc
 - Remover linhas duplicadas ignore case - https://seddryck.wordpress.com/2018/03/31/table-distinct-and-case-pitfalls-with-power-query-m-language/
+- Verificar se coluna é número - https://www.fourmoo.com/2019/10/09/power-query-add-column-to-see-if-it-is-a-number-data-type/
+- Dimensão de tempo - https://www.fourmoo.com/2019/08/28/creating-a-time-dimension-using-the-power-query-editor-in-power-bi-desktop/
 
 ___
 
