@@ -33,6 +33,7 @@ __Power Query M__
 - Dimensão de tempo - https://www.fourmoo.com/2019/08/28/creating-a-time-dimension-using-the-power-query-editor-in-power-bi-desktop/
 - Arquivos CSV - https://blog.crossjoin.co.uk/2018/03/09/an-in-depth-look-at-the-csv-document-m-function/
 - Trim cabeçalhos - https://www.youtube.com/watch?v=QQtS1hECgwI
+- Renomear cabeçalhos - https://bengribaudo.com/blog/2018/05/18/4447/automating-column-name-renames
 
 ___
 
