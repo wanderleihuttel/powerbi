@@ -23,6 +23,7 @@ __DAX__
 ___
 
 __Power Query M__ 
+- Formatar código M - http://powerqueryformatter.com/
 - Combinar funções M - https://powerpivotpro.com/2018/06/powerquery-magic-combine-m-functions-and-formulas-in-custom-columns/
 - Tabelas em M - https://ssbi-blog.de/blog/technical-topics-english/tables-in-power-query-how-when-and-why/
 - Fibonacci - https://radacad.com/fibonacci-sequence-understanding-the-power-query-recursive-function
