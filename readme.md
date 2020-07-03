@@ -35,6 +35,7 @@ __Power Query M__
 - Arquivos CSV - https://blog.crossjoin.co.uk/2018/03/09/an-in-depth-look-at-the-csv-document-m-function/
 - Trim cabeçalhos - https://www.youtube.com/watch?v=QQtS1hECgwI
 - Renomear cabeçalhos - https://bengribaudo.com/blog/2018/05/18/4447/automating-column-name-renames
+- Verificar substring é número - https://stackoverflow.com/questions/37960196/is-there-an-isnumber-or-istext-equivalent-for-power-query
 
 ___
 
