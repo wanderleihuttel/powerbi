@@ -42,6 +42,7 @@ ___
 __Modelagem__
 - Esquema estrela - https://docs.microsoft.com/pt-br/power-bi/guidance/star-schema
 - Base de dados de exemplos - https://docs.microsoft.com/pt-br/power-bi/create-reports/sample-datasets
+- Dados abertos - https://medium.com/rladiesbh/19-lugares-para-encontrar-conjuntos-de-dados-gratuitos-para-projetos-de-ci%C3%AAncia-de-dados-4390943d860d
 
 ___
 
