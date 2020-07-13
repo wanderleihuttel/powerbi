@@ -49,6 +49,7 @@ ___
 
 __Temas, Fundos e Personalização__
 - Galeria de temas - https://community.powerbi.com/t5/Themes-Gallery/bd-p/ThemesGallery
+- Temas - https://alluringbi.com/gallery/
 - Modelos de Dashboards - http://www.powerbiarte.com.br/
 - Emojis - https://getemoji.com/ 
 - Emojis - In Windows 10 [Windows Key + .] (windows key + dot key)
