@@ -1,7 +1,7 @@
 /*
 Tabela Calendário
 Autor:            Wanderlei Hüttel
-Última alteração: 23/06/2020
+Última alteração: 28/07/2020
 */
 
 let
@@ -33,8 +33,8 @@ let
     ColunaSemanaDoMês = Table.AddColumn(ColunaNomeMêsAno, "Semana Do Mês", each Date.WeekOfMonth([IdData]), Int64.Type),
     ColunaSemanaDoAno = Table.AddColumn(ColunaSemanaDoMês, "Semana Do Ano", each Date.WeekOfYear([IdData]), Int64.Type),
     ColunaBimestre = Table.AddColumn(ColunaSemanaDoAno, "Bimestre", each if Number.Mod([Mês],2) = 0 then [Mês]/2 else ([Mês]+1)/2, Int64.Type),
-    ColunaTrimestre = Table.AddColumn(ColunaBimestre, "Trimestre", each Date.QuarterOfYear([IdData])),
-    ColunaSemestre = Table.AddColumn(ColunaTrimestre, "Semestre", each if [Mês] <= 6 then 1 else 2, Int64.Type),   
+    ColunaTrimestre = Table.AddColumn(ColunaBimestre, "Trimestre", each Date.QuarterOfYear([IdData]), Int64.Type),
+    ColunaSemestre = Table.AddColumn(ColunaTrimestre, "Semestre", each if [Mês] <= 6 then 1 else 2, Int64.Type),
     ColunaDataSerial = Table.AddColumn(ColunaSemestre, "DateSerial", each Number.FromText(Date.ToText([IdData], "yyyyMMdd")), Int64.Type)
 in
     ColunaDataSerial
