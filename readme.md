@@ -37,7 +37,8 @@ __Power Query M__
 - Trim cabeçalhos - https://www.youtube.com/watch?v=QQtS1hECgwI
 - Renomear cabeçalhos - https://bengribaudo.com/blog/2018/05/18/4447/automating-column-name-renames
 - Verificar substring é número - https://stackoverflow.com/questions/37960196/is-there-an-isnumber-or-istext-equivalent-for-power-query
-- Accumular valores em uma Lista (List Accumulate)- https://www.youtube.com/watch?v=0l_mxQVTVsU
+- Acumular valores em uma Lista (List Accumulate)- https://www.youtube.com/watch?v=0l_mxQVTVsU
+- API Paginação - https://medium.com/@marktiedemann/how-to-do-pagination-in-power-query-430460c17c78
 
 ___
 
