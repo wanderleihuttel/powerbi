@@ -39,6 +39,7 @@ __Power Query M__
 - Verificar substring é número - https://stackoverflow.com/questions/37960196/is-there-an-isnumber-or-istext-equivalent-for-power-query
 - Acumular valores em uma Lista (List Accumulate)- https://www.youtube.com/watch?v=0l_mxQVTVsU
 - API Paginação - https://medium.com/@marktiedemann/how-to-do-pagination-in-power-query-430460c17c78
+- Dimensão Tempo - https://insightsquest.com/2019/08/25/time-dimension-via-power-query/
 
 ___
 
