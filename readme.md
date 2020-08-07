@@ -41,6 +41,7 @@ __Power Query M__
 - API Paginação - https://medium.com/@marktiedemann/how-to-do-pagination-in-power-query-430460c17c78
 - Trabalhar com horas1 - https://insightsquest.com/2019/08/25/time-dimension-via-power-query/
 - Trabalhar com horas2 - https://www.youtube.com/watch?v=8DFih8ccMV0
+- Efetuando Loops - https://www.youtube.com/watch?v=T1q3BF5_YJ8
 
 ___
 
