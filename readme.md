@@ -44,6 +44,7 @@ __Power Query M__
 - Efetuando Loops - https://www.youtube.com/watch?v=T1q3BF5_YJ8
 - Linhas p/ Colunas1 - https://www.youtube.com/watch?v=5OF12HMxVuk
 - Linhas p/ Colunas2 - https://www.youtube.com/watch?v=oNGHsmHA7s0
+- List.Accumlate para substituir caracteres - https://chandoo.org/wp/multiple-find-replace-list-accumulate/
 
 ___
 
