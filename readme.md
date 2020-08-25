@@ -98,3 +98,8 @@ ___
 __Outros__
 - Extensão Chrome rotacionar abas - https://www.bidoconceitoapratica.com.br/2019/01/09/rotacao-de-abas/
 - Melhorar exibição em TV - https://www.youtube.com/watch?v=stHD0FVsdJk
+
+<br/><br/>
+<hr>
+Se você gostou deste repositório não esqueça de dar um like (clicando na estrela) :star:!<br/>
+Linkedin: https://www.linkedin.com/in/wanderleihuttel/
