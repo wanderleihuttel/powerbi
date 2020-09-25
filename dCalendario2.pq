@@ -1,18 +1,26 @@
 /*
-Tabela Calendário modelo 2
+Tabela Calendário Modelo 2
 Autor:            Wanderlei Hüttel
-Última alteração: 04/08/2020
+Última alteração: 25/09/2020
+
+https://www.linkedin.com/in/wanderleihuttel
+https://github.com/wanderleihuttel/powerbi
+
+Dicas do Joviano Silveira
+https://joviano.com/
 */
+
 let
-    DataMin = Date.FromText("01/01/2018"), //List.Min(fVendas[Data Venda]),
-    DataMax = Date.FromText("31/12/2020"), //List.Max(fVendas[Data Venda]),
+    DataMin = Date.FromText("01/01/2019"), //List.Min(Fato1[Data] & Fato2[Data]),
+    DataMax = Date.FromText("31/12/2020"), //List.Max(Fato1[Data] & Fato2[Data]),
     DataInicial = #date(Date.Year(DataMin), 1, 1),
     DataFinal = #date(Date.Year(DataMax), 12, 31),
     Duracao = Duration.Days(DataFinal - DataInicial) + 1,
-    Fonte = List.Buffer(List.Sort(List.Dates (DataInicial, Duracao, #duration(1,0,0,0)),Order.Ascending)),
-    AddColunas = List.Transform(Fonte, each 
+    ListDates = List.Buffer(List.Sort(List.Dates (DataInicial, Duracao, #duration(1,0,0,0)), Order.Ascending)),
+    AdicionarColunas = List.Transform(ListDates, each 
         {
-            _, //IdData
+            _, //DataId
+            List.PositionOf(ListDates, _)+1, // Índice
             Date.Year(_), //Ano
             Date.Month(_), //Mês
             Date.Day(_), //Dia
@@ -31,12 +39,14 @@ let
             if Number.Mod(Date.Month(_),2) = 0 then Date.Month(_)/2 else (Date.Month(_)+1)/2, //Bimestre
             Date.QuarterOfYear(_), //Trimestre
             if Date.Month(_) <= 6 then 1 else 2, //Semestre
+            Number.FromText(Date.ToText(_, "yyyyMM")), //AnoMêsNúmero
             Number.FromText(Date.ToText(_, "yyyyMMdd")) //Data serial
         }
     ),
-    DateTable = #table(
+    ListaParaTabela = #table(
         type table [
-            #"IdData"  = date,
+            #"DataId"  = date,
+            #"Indice"   = Int64.Type,
             #"Ano"   = Int64.Type,
             #"Mês"   = Int64.Type,
             #"Dia"   = Int64.Type,
@@ -55,10 +65,10 @@ let
             #"Bimestre" = Int64.Type,
             #"Trimestre" = Int64.Type,
             #"Semestre" = Int64.Type,
+            #"AnoMêsNúmero" = Int64.Type,
             #"DataSerial" = Int64.Type
         ],
-        AddColunas
-    ),
-    ColunaIndice = Table.AddIndexColumn(DateTable, "Indice", 1, 1, Int64.Type)
+        AdicionarColunas
+    )
 in
-    ColunaIndice
+    ListaParaTabela
