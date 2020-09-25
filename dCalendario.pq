@@ -1,19 +1,17 @@
 /*
-Tabela Calendário
+Tabela Calendário - ptBR
 Autor:            Wanderlei Hüttel
-Última alteração: 28/07/2020
+Última alteração: 25/09/2020
 */
 
 let
     DataMin = Date.FromText("01/01/2019"), //List.Min(Fato1[Data] & Fato2[Data]),
     DataMax = Date.FromText("31/12/2020"), //List.Max(Fato1[Data] & Fato2[Data]),
-    AnoMin = Date.Year(DataMin),
-    AnoMax = Date.Year(DataMax),
-    DataInicial = #date(AnoMin,1,1),
-    DataFinal = #date(AnoMax,12,31),
+    DataInicial = #date(Date.Year(DataMin), 1, 1),
+    DataFinal = #date(Date.Year(DataMax), 12, 31),
     Duracao = Duration.Days(DataFinal - DataInicial) + 1,
-    Fonte = List.Sort(List.Dates (DataInicial, Duracao, #duration(1,0,0,0)),Order.Ascending),
-    ListaParaTabela = Table.FromList(Fonte, Splitter.SplitByNothing(), {"IdData"}, null, ExtraValues.Error),
+    ListDates = List.Buffer(List.Sort(List.Dates (DataInicial, Duracao, #duration(1,0,0,0)), Order.Ascending)),
+    ListaParaTabela = Table.FromList(ListDates, Splitter.SplitByNothing(), {"IdData"}, null, ExtraValues.Error),
     ColunaIndice = Table.AddIndexColumn(ListaParaTabela, "Indice", 1, 1),
     AlterarTipo = Table.TransformColumnTypes(ColunaIndice,{{"IdData", type date}, {"Indice", Int64.Type}}),
     ReordenarColunas = Table.ReorderColumns(AlterarTipo,{"Indice", "IdData"}),
@@ -35,6 +33,7 @@ let
     ColunaBimestre = Table.AddColumn(ColunaSemanaDoAno, "Bimestre", each if Number.Mod([Mês],2) = 0 then [Mês]/2 else ([Mês]+1)/2, Int64.Type),
     ColunaTrimestre = Table.AddColumn(ColunaBimestre, "Trimestre", each Date.QuarterOfYear([IdData]), Int64.Type),
     ColunaSemestre = Table.AddColumn(ColunaTrimestre, "Semestre", each if [Mês] <= 6 then 1 else 2, Int64.Type),
-    ColunaDataSerial = Table.AddColumn(ColunaSemestre, "DateSerial", each Number.FromText(Date.ToText([IdData], "yyyyMMdd")), Int64.Type)
+    ColunaAnoMes = Table.AddColumn(ColunaSemestre, "AnoMêsNúmero", each Number.FromText(Date.ToText([IdData], "yyyyMM")), Int64.Type),
+    ColunaDataSerial = Table.AddColumn(ColunaAnoMes, "DateSerial", each Number.FromText(Date.ToText([IdData], "yyyyMMdd")), Int64.Type)
 in
     ColunaDataSerial
