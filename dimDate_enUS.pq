@@ -1,7 +1,10 @@
 /*
-Dim Date English
-Author:      Wanderlei Hüttel
-Last Update: 18/09/2020
+DimDate English
+Author: Wanderlei Hüttel
+Last Update: 25/09/2020
+
+https://www.linkedin.com/in/wanderleihuttel
+https://github.com/wanderleihuttel/powerbi
 */
 
 
