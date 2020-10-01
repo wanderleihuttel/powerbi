@@ -21,7 +21,7 @@ __DAX__
 - Medida para converter bytes para KB, MB, GB - https://community.powerbi.com/t5/Desktop/Function-to-convert-bytes-into-KB-MB-GB-TB-PB-etc/td-p/468023
 - Mostrar meses anteriores - https://www.linkedin.com/pulse/saiba-como-mostrar-mesmo-eixo-os-n-meses-anteriores-ao-pedro-eloy/
 - Analisar dados no Excel - https://eriksvensen.wordpress.com/2020/07/27/powerbi-external-tool-to-connect-excel-to-the-current-pbix-file/
-
+- Preencher para baixo DAX - https://www.youtube.com/watch?v=Vm_dSLCvBnA
 ___
 
 __Power Query M__ 
