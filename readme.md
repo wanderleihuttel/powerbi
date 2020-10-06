@@ -22,6 +22,7 @@ __DAX__
 - Mostrar meses anteriores - https://www.linkedin.com/pulse/saiba-como-mostrar-mesmo-eixo-os-n-meses-anteriores-ao-pedro-eloy/
 - Analisar dados no Excel - https://eriksvensen.wordpress.com/2020/07/27/powerbi-external-tool-to-connect-excel-to-the-current-pbix-file/
 - Preencher para baixo DAX - https://www.youtube.com/watch?v=Vm_dSLCvBnA
+- Tratar filtros em branco - https://www.youtube.com/watch?v=YoPiQh6Vkr4
 ___
 
 __Power Query M__ 
