@@ -1,0 +1,14 @@
+//Função DAX para converter Segundos para HHH:MM:SS
+
+Horas Inteiro V1 = 
+VAR vSegundos = MAX(Tabela[Segundos])
+VAR vDiasInt = INT(vSegundos / 86400) * 24
+VAR vDiasDec = (vSegundos / 86400) * 24  - vDiasInt
+VAR vHorasInt = INT(vDiasDec)
+VAR vHorasDec = vDiasDec - vHorasInt
+VAR vMinutosInt = INT(vHorasDec * 60)
+VAR vMinutosDec = (vHorasDec * 60) - vMinutosInt
+VAR vSegundosInt = (vMinutosDec * 60)
+VAR vHoraFinal = FORMAT(vDiasInt + vHorasInt, "000") & FORMAT(vMinutosInt, "00") & FORMAT(vSegundosInt, "00")
+RETURN
+CONVERT(vHoraFinal, INTEGER)
