@@ -53,6 +53,7 @@ __Power Query M__
 - Linhas p/ Colunas2 - https://www.youtube.com/watch?v=oNGHsmHA7s0
 - List.Accumulate para substituir caracteres - https://chandoo.org/wp/multiple-find-replace-list-accumulate/
 - Arquivo texto sem delimitador - https://powerpivotpro.com/2016/03/power-query-fixed-width-magic/
+- Adicionar Zeros à Esquerda - http://datacornering.com/how-to-add-leading-zeros-in-r-power-query-dax-or-excel/
 
 ___
 
