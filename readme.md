@@ -104,3 +104,5 @@ ___
 __Outros__
 - Extensão Chrome rotacionar abas - https://www.bidoconceitoapratica.com.br/2019/01/09/rotacao-de-abas/
 - Melhorar exibição em TV - https://www.youtube.com/watch?v=stHD0FVsdJk
+- Configurar Syntax Highlight Notepad++ (PowerQuery) - http://sascha-kasper.com/m-aka-power-query-and-notepad/
+- Configurar Syntax Highlight Notepad++ (DAX) - http://sascha-kasper.com/dax-syntax-highlighting-for-notepad/
