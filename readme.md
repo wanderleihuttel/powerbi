@@ -91,6 +91,7 @@ __Criar Paleta de Cores__
 - https://coolors.co/ 
 - https://colourco.de/
 - https://flatuicolors.com/
+- https://www.colors.lol/
 
 ___
 
