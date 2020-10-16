@@ -100,6 +100,13 @@ __Baixar Ícones__
 - https://icon-icons.com/pt/
 - https://logomakr.com/
 - https://graphicburger.com/
+- https://www.freeicons.io/
+- https://www.iconfinder.com/
+- https://icon-icons.com/
+- https://www.iconspedia.com/
+- https://www.iconshock.com/
+- https://findicons.com/
+- https://thenounproject.com/
 
 ___
 
