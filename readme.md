@@ -70,7 +70,7 @@ __Temas, Fundos e Personalização__
 - Temas - https://alluringbi.com/gallery/
 - Modelos de Dashboards - http://www.powerbiarte.com.br/
 - Emojis - https://getemoji.com/ 
-- Emojis - In Windows 10 [Windows Key + .] (windows key + dot key)
+- Emojis - In Windows 10 [Windows Key + .] ou (Windows Key + ç)
 - Layouts - https://powerbi.tips/tools/layouts/
 
 ___
