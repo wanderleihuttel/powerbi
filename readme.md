@@ -28,6 +28,7 @@ __DAX__
 - Analisar dados no Excel - https://eriksvensen.wordpress.com/2020/07/27/powerbi-external-tool-to-connect-excel-to-the-current-pbix-file/
 - Preencher para baixo DAX - https://www.youtube.com/watch?v=Vm_dSLCvBnA
 - Tratar filtros em branco - https://www.youtube.com/watch?v=YoPiQh6Vkr4
+- RankX sem repetições - http://www.rafaelmendonca.com/2018/10/power-bi-criando-ranking-sem-repeticoes.html
 ___
 
 __Power Query M__ 
