@@ -29,6 +29,7 @@ __DAX__
 - Preencher para baixo DAX - https://www.youtube.com/watch?v=Vm_dSLCvBnA
 - Tratar filtros em branco - https://www.youtube.com/watch?v=YoPiQh6Vkr4
 - RankX sem repetições - http://www.rafaelmendonca.com/2018/10/power-bi-criando-ranking-sem-repeticoes.html
+- Destacar Maior e Menor valor em DAX - https://www.youtube.com/watch?v=5yAylZKL0lE
 ___
 
 __Power Query M__ 
