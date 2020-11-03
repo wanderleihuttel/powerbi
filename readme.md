@@ -68,6 +68,7 @@ __Modelagem__
 ___
 
 __Temas, Fundos e Personalização__
+- Gerar Temas Json - https://themes.powerbi.tips/
 - Galeria de temas - https://community.powerbi.com/t5/Themes-Gallery/bd-p/ThemesGallery
 - Temas - https://alluringbi.com/gallery/
 - Modelos de Dashboards - http://www.powerbiarte.com.br/
