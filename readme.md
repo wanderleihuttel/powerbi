@@ -31,6 +31,7 @@ __DAX__
 - RankX sem repetições - http://www.rafaelmendonca.com/2018/10/power-bi-criando-ranking-sem-repeticoes.html
 - Destacar Maior e Menor valor em DAX - https://www.youtube.com/watch?v=5yAylZKL0lE
 - DAX Fusion (melhorar performance) - https://dax.tips/2019/08/05/dax-fusion/
+- Aplicando o Formato de Horas - https://www.youtube.com/watch?v=7iINnoIkeIk
 ___
 
 __Power Query M__ 
