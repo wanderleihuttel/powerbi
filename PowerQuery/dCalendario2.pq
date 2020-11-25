@@ -1,13 +1,11 @@
 /*
 Tabela Calendário Modelo 2
 Autor:            Wanderlei Hüttel
-Última alteração: 16/10/2020
+Última alteração: 25/11/2020
 
 https://www.linkedin.com/in/wanderleihuttel
 https://github.com/wanderleihuttel/powerbi
 
-Dicas do Joviano Silveira
-https://joviano.com/
 */
 
 let
@@ -32,6 +30,7 @@ let
             Date.DayOfWeek(_), //Dia da semana
             if not List.Contains({0,6}, Date.DayOfWeek(_)) then true else false, //Dia útil
             if Date.From( DateTimeZone.SwitchZone(DateTimeZone.UtcNow(),-3) ) = _ then true else false, //Hoje
+            if Date.Year(_) = Date.Year(DateTimeZone.SwitchZone(DateTimeZone.UtcNow(),-3) ) and Date.Month(_) = Date.Month(DateTimeZone.SwitchZone(DateTimeZone.UtcNow(),-3) ) then true else false, //Mês atual
             Text.Proper(Date.DayOfWeekName(_)), //Nome do dia da semana
             Text.Proper(Date.ToText(_,"ddd", Culture.Current)), //Nome do dia da semana curto
             Date.ToText(_, "dd/MM"), //Dia/mês
@@ -60,6 +59,7 @@ let
             #"DiaDaSemana" = Int64.Type,
             #"DiaÚtil" = logical,
             #"Hoje" = logical,
+            #"MêsAtual" = logical,
             #"NomeDiaDaSemana" = text,
             #"NomeCurtoDiaDaSemana" = text,
             #"Dia/Mês" = text,
