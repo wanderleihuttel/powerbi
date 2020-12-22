@@ -32,6 +32,7 @@ __DAX__
 - Destacar Maior e Menor valor em DAX - https://www.youtube.com/watch?v=5yAylZKL0lE
 - DAX Fusion (melhorar performance) - https://dax.tips/2019/08/05/dax-fusion/
 - Aplicando o Formato de Horas - https://www.youtube.com/watch?v=7iINnoIkeIk
+- Slicers para selecionar medidas - https://www.youtube.com/watch?v=gEeiqsm7BaY
 ___
 
 __Power Query M__ 
