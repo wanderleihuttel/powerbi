@@ -114,6 +114,7 @@ __Baixar Ícones__
 - https://www.iconshock.com/
 - https://findicons.com/
 - https://thenounproject.com/
+- https://remixicon.com/
 
 ___
 
