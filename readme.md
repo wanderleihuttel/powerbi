@@ -98,6 +98,7 @@ __Criar Paleta de Cores__
 - https://colourco.de/
 - https://flatuicolors.com/
 - https://www.colors.lol/
+- https://mycolor.space/
 
 ___
 
@@ -115,6 +116,9 @@ __Baixar Ícones__
 - https://findicons.com/
 - https://thenounproject.com/
 - https://remixicon.com/
+- https://www.drawkit.io/free-icons
+- https://undraw.co/illustrations
+- https://blush.design/pt/collections
 
 ___
 
