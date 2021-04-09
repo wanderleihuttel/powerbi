@@ -60,6 +60,7 @@ __Power Query M__
 - Arquivo texto sem delimitador - https://powerpivotpro.com/2016/03/power-query-fixed-width-magic/
 - Adicionar Zeros à Esquerda - http://datacornering.com/how-to-add-leading-zeros-in-r-power-query-dax-or-excel/
 - dCalendario Fiscal - https://www.youtube.com/watch?v=2XUZOtEFbSc
+- Transformações dinâmicas e em massa usando Listas - https://www.thebiccountant.com/2017/01/09/dynamic-bulk-type-transformation-in-power-query-power-bi-and-m/
 
 ___
 
