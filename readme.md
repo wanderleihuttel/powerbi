@@ -122,6 +122,7 @@ __Baixar Ícones__
 - https://www.drawkit.io/free-icons
 - https://undraw.co/illustrations
 - https://blush.design/pt/collections
+- https://github.com/microsoft/PowerBI-Icons
 
 ___
 
