@@ -123,6 +123,11 @@ __Baixar Ícones__
 - https://undraw.co/illustrations
 - https://blush.design/pt/collections
 - https://github.com/microsoft/PowerBI-Icons
+- https://iconmonstr.com/
+- https://icomoon.io/app/#/select
+- https://fontawesome.com/
+- https://dryicons.com/free-icons
+
 
 ___
 
