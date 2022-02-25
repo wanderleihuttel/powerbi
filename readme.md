@@ -64,6 +64,7 @@ __Power Query M__
 - Transformações dinâmicas e em massa usando Listas - https://www.thebiccountant.com/2017/01/09/dynamic-bulk-type-transformation-in-power-query-power-bi-and-m/
 - Conexão API Omie - https://www.youtube.com/watch?v=g6l0Rg0ez68
 - Conexão API Omie Paginado - https://www.youtube.com/watch?v=HgxYfJlwjQ4
+ - Listas - https://gorilla.bi/power-query/complete-guide-to-lists/
 
 ___
 
