@@ -66,6 +66,7 @@ __Power Query M__
 - Conexão API Omie Paginado - https://www.youtube.com/watch?v=HgxYfJlwjQ4
 - Listas - https://gorilla.bi/power-query/complete-guide-to-lists/
 - Juntar texto de várias linhas - https://www.youtube.com/watch?v=dB8W4GCf9AY
+- Substituir Valores - https://gorilla.bi/power-query/replace-values/
 
 ___
 
