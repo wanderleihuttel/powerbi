@@ -42,7 +42,7 @@ let
     ResponseMetadata = Value.Metadata(Response),
     ResponseBinary = Binary.Buffer(Response),
     StatusCode = ResponseMetadata[Response.Status],
-    Retorno =  if StatusCode = 200 then Json.Document(ResponseBinary,65001)[value] else null,
+    Retorno =  if StatusCode = 200 then Json.Document(ResponseBinary,65001)[value] else {[dataHoraCotacao = null ,cotacaoCompra = null ,cotacaoVenda = null]},
     ConverterRetorno = List.Transform(Retorno, each Table.PromoteHeaders(Table.Transpose(Record.ToTable(_))) ),
     CombinarTabelas = Table.Combine(ConverterRetorno),
     TipoAlterado = Table.TransformColumnTypes(CombinarTabelas,{{"cotacaoCompra", type number}, {"cotacaoVenda", type number}, {"dataHoraCotacao", type datetime}})
