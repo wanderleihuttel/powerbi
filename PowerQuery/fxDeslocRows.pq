@@ -11,13 +11,13 @@ let func =
     in
         Output,
         documentation = [
-            Documentation.Name =  "fnDeslocRows",
+            Documentation.Name =  "fxDeslocRows",
             Documentation.Description = "Desloc row values from a column to top or bottom",
             Documentation.Category = "",
             Documentation.Source = "https://github.com/wanderleihuttel/powerbi",
             Documentation.Version = "1.0 ",
             Documentation.Author = "Wanderlei Hüttel",
-            Documentation.Examples = {[Description =  "Create a custom column and include the following code:", Code = "fnDeslocRows(Source, ""ColumnName"", optional vRows)", Result = "Source[NewColumn]"]}
+            Documentation.Examples = {[Description =  "Create a custom column and include the following code:", Code = "fxDeslocRows(Source, ""ColumnName"", optional vRows)", Result = "Source[NewColumn]"]}
         ]
 
 in
