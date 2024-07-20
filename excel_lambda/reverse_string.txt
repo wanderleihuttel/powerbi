@@ -1,0 +1,9 @@
+=LAMBDA(
+    _input;
+    LET(
+        _size;NÚM.CARACT(_input);
+        _sequence;ABS(SEQUÊNCIA(_size;;_size;-1));
+        _reverse;EXT.TEXTO(_input;_sequence;1);
+        CONCAT(_reverse)
+    )
+)
