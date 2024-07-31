@@ -1,0 +1,24 @@
+Exemplo de colunas com valores separados por ";" que não possuem o mesmo tamanho
+
+Coluna Excel
+A1 = A;A;A;A;A
+A2 = B;B;B
+A3 = C;C;C;C
+A4 = D;D;D;D;D
+A5 = E;E;E;E;E;E
+A6 = F;F;F;F;F;F;F
+
+A ideia é gerar uma tabela com um número X de colunas (no caso vai pegar a linha que possuí mais caracteres e usar como quantidade de colunas).
+E dai nas colunas que não possuem valor, vai deixar o valor vazio.
+
+=LET(
+    _Input; {"A;A;A;A;A";"B;B;B";"C;C;C;C";"D;D;D;D;D";"E;E;E;E;E;E";"F;F;F;F;F;F;F"};
+    _Len; NÚM.CARACT(_Input) - NÚM.CARACT(SUBSTITUIR(_Input; ";"; "")) + 1;
+    _Max; MÁXIMO(_Len);
+    _Header; UNIRTEXTO(";"; ; PARALIN("COLUNA" & SEQUÊNCIA(_Max)));
+    _NewInput; SE(_Len <= _Max; _Input & REPT(";"; _Max - _Len); _Input);
+    _TextJoin; _Header & ";" & UNIRTEXTO(";"; 0; _NewInput);
+    _TextSplit; DIVIDIRTEXTO(_TextJoin; ; ";"; FALSO);
+    _WrapRows; QUEBRARLINS(_TextSplit; _Max);
+    _WrapRows
+)
