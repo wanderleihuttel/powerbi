@@ -22,3 +22,14 @@ E dai nas colunas que não possuem valor, vai deixar o valor vazio.
     _WrapRows; QUEBRARLINS(_TextSplit; _Max);
     _WrapRows
 )
+
+
+Essa versão resumida e até mais fácil de entender é uma contribuição do mestre Laennder Alves 
+https://www.linkedin.com/in/laennder/
+
+=LET(
+    _input;{"A;A;A;A;A";"B;B;B";"C;C;C;C";"D;D;D;D;D";"E;E;E;E;E;E";"F;F;F;F;F;F;F"};
+    _data; DIVIDIRTEXTO(UNIRTEXTO("\";0;_input); ";"; "\";;;"");
+    _header;"COLUNA" & SEQUÊNCIA(;COLS(_data));
+    EMPILHARV(_header;_data)
+)
