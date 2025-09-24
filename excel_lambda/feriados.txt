@@ -1,0 +1,43 @@
+Função Lambda para retornar os feriados nacionais by Fábio de Carvalho Gatti
+https://www.youtube.com/watch?v=5vi_RQQ_byU
+
+* Incluído feriado municipal de São Bento do Sul/SC
+
+=LAMBDA(Anos;
+     LET(
+          fxLoopAnos;BYROW(Anos;LAMBDA(Ano;
+               LET(
+                    Pascoa;MOEDA(("4/"&Ano)/7+MOD(19*MOD(Ano;19)-7;30)*14%;)*7-6;
+                    Dia1Maio;DATA(Ano;5;1);
+                    Dia1Agosto;DATA(Ano;8;1);
+
+                    UNIRTEXTO("|";1;
+                         "Ano Novo;" & DATA(Ano;1;1);
+                         "Carnaval;" & Pascoa - 47;
+                         "Sexta-feira da Paixão;" & Pascoa - 2;
+                         "Páscoa;" & Pascoa;
+                         "Tiradentes;" & DATA(Ano;4;21);
+                         "Dia do Trabalho;" & DATA(Ano;5;1);
+                         "Dia das Mães;" & Dia1Maio - DIA.DA.SEMANA( Dia1Maio; 2 ) + 14;
+                         "Corpus Christi;" & Pascoa + 60;
+                         "Dia dos Pais;" & Dia1Agosto - DIA.DA.SEMANA( Dia1Agosto; 2 ) + 14;
+                         "Dia da Independência;" & DATA(Ano;9;7);
+                         "Nossa Senhora;" & DATA(Ano;10;12);
+                         "Finados;" & DATA(Ano;11;2);
+                         "Proclamação da República;" & DATA(Ano;11;15);
+                         "Consciência Negra;" & DATA(Ano;11;20);
+                         "Natal;" & DATA(Ano;12;25);
+                         "Aniversário de São Bento do Sul/SC;" & DATA(Ano;9;23);
+                    )
+               )
+          ));
+
+          UnirLoop;UNIRTEXTO("|";1;fxLoopAnos);
+          SepararLinhas;DIVIDIRTEXTO(UnirLoop;;"|");
+          FeriadosDesc;TEXTOANTES(SepararLinhas;";");
+          FeriadosDatas;--TEXTODEPOIS(SepararLinhas;";");
+          Dados;EMPILHARH(FeriadosDatas;FeriadosDesc);
+
+          CLASSIFICAR(Dados;1;1)
+     )
+)({2025;2026;2027})
