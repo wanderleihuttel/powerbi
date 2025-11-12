@@ -24,7 +24,7 @@ update tabela set datanascimento = '#datanascimento#' where id = #id#;
 ```
 fxSQLReplace = LAMBDA(CommandSQL;TableWithHeaders;
     LET(
-       _header;ESCOLHERLINS(TableWithHeaders;1);
+       _header;PEGAR(TableWithHeaders;1);
        _data;DESCARTAR(TableWithHeaders;1);
        _sql;CommandSQL;
     
