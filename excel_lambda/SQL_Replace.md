@@ -6,16 +6,18 @@ Exemplo de comando SQL
 # As variáveis do comando SQL precisam estar entre cerquilhas (#)
 # E precisam ser iguais aos cabeçalhos das colunas da tabela
 
-update tabela set datanascimento = '#datanascimento#' where id = #id#;
+update tabela set datanascimento = '#datanascimento#', cidade = '#cidade#', estado = '#estado#', pais = '#país#' where id = #id#;
 ```
 &nbsp;
-| id | nome              | datanascimento  |
-|----|-------------------|-----------------|
-| 1  | Bill Gates        | 28.10.1955      |
-| 2  | Steve Jobs        | 24.02.1955      |
-| 3  | Jeff Bezos        | 12.01.1964      |
-| 4  | Mark Zuckerberg   | 14.05.1984      |
-| 5  | Elon Musk         | 28.06.1971      |
+| Id | Nome              | DataNascimento    | Cidade         | Estado             | País                |
+|----|-------------------|-------------------|----------------|--------------------|---------------------|
+| 1  | Bill Gates        | 28.10.1955        | Seattle        | Washington         | Estados Unidos      |
+| 2  | Steve Jobs        | 24.02.1955        | San Francisco  | Califórnia         | Estados Unidos      |
+| 3  | Jeff Bezos        | 12.01.1964        | Albuquerque    | Novo México        | Estados Unidos      |
+| 4  | Mark Zuckerberg   | 14.05.1984        | White Plains   | Nova York          | Estados Unidos      |
+| 5  | Elon Musk         | 28.06.1971        | Pretória       | Gauteng            | África do Sul       |
+
+
 
 
 
