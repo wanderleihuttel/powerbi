@@ -1,0 +1,11 @@
+/* Função Para substituir letras acentuadas por letras sem acentos, conforme tabela abaixo */
+
+= LAMBDA(_Texto;
+  LET(
+      _ListaComAcentos; PARACOL(REGEX.EXTRAIR("àáâãäèéêëìíîïòóôõöùúûüÀÁÂÃÄÈÉÊËÌÍÎÒÓÔÕÖÙÚÛÜçÇñÑ"; "."; 1));
+      _ListaSemAcentos; PARACOL(REGEX.EXTRAIR("aaaaaeeeeiiiiooooouuuuAAAAAEEEEIIIOOOOOUUUUcCnN"; "."; 1));
+      _MatrizSeq;SEQUÊNCIA(LINS(_ListaComAcentos));
+      _Resultado;REDUCE(_Texto; _MatrizSeq; LAMBDA(a;i; SUBSTITUIR(a; ÍNDICE(_ListaComAcentos;i); ÍNDICE(_ListaSemAcentos;i) )));
+      _Resultado
+  )
+)
