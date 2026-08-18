@@ -1,5 +1,6 @@
 # Alterar o Tipo das colunas com base nos nomes
 
+# Converter valores por tipo 
 = Table.TransformColumns(ColunasReordenadas, 
     List.Transform(
         List.Select(Table.ColumnNames(ColunasReordenadas), each Text.StartsWith(Text.Lower(_), "data")),
@@ -13,4 +14,17 @@
         List.Select(Table.ColumnNames(ColunasReordenadas), each not Text.StartsWith(Text.Lower(_), "data") and not Text.StartsWith(Text.Lower(_), "valor")),
         each { _ , each Text.From(_), type text}
      )    
+)
+
+
+# Converter valores para texto 
+= Table.TransformColumns(ColunasReordenadas, 
+    List.Transform(
+        List.Select(Table.ColumnNames(ColunasReordenadas), each Text.StartsWith(Text.Lower(_), "data")),
+        each { _ , each Date.ToText(_, "dd.MM.yyyy"), type text}
+    ) &
+    List.Transform(
+        List.Select(Table.ColumnNames(ColunasReordenadas), each Text.StartsWith(Text.Lower(_), "valor")),
+        each { _ , each Number.ToText(_, "F2","en-US"), type text}
+    )   
 )
